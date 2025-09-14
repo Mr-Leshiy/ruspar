@@ -7,7 +7,7 @@
 ќдновременно с физическим напр€жением снимаетс€ стресс и улучшаетс€ самочувствие)
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>830&nbsp;грн</b></td>
+  <td align=right><b>1050&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -16,7 +16,7 @@
 Ќормализуетс€ внутричерепное давление, снимаетс€ стресс и головные боли)
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>450&nbsp;грн</b></td>
+  <td align=right><b>460&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -25,7 +25,7 @@
 увеличиваетс€ подвижность суставов. ћышцы станов€тс€ эластичными, укрепл€ютс€ стенки кровеносных сосудов)
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>450&nbsp;грн</b></td>
+  <td align=right><b>460&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -35,7 +35,7 @@
 улучшаетс€ циркул€ци€ крови в головном мозге и уменьшаетс€ ощущение утомлени€)
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>420&nbsp;грн</b></td>
+  <td align=right><b>460&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -44,7 +44,7 @@
 увеличиваетс€ подвижность суставов. ћышцы станов€тс€ эластичными, укрепл€ютс€ стенки кровеносных сосудов)
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>450&nbsp;грн</b></td>
+  <td align=right><b>460&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -54,6 +54,6 @@
 сн€тие мышечного напр€жени€)
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>500&nbsp;грн</b></td>
+  <td align=right><b>550&nbsp;грн</b></td>
  </tr>
 </table>
