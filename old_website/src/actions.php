@@ -28,50 +28,54 @@
 		<center><h1>Наши акции</h1></center>
 
 <center>
-<div style="text-align: justify; width: 600px; background: #D9B07E; outline: 2px solid #D9B07E; border: 3px solid #D9B07E; border-radius: 10px;">
+<div style="text-align: center; width: 600px; background: #D9B07E; outline: 2px solid #D9B07E; border: 3px solid #D9B07E; border-radius: 10px;">
 <h1>
-Не получается собраться с друзьями пойти в баню? Не ждите никого, приходите сами. 
+Не получается собраться с друзьями пойти в баню?
+<br><br>
+Не ждите никого, приходите сами.
+<br><br>
 С понедельника по пятницу с 09:00 до 17:00 баня &laquo;Лёгкий Пар&raquo; примет Вас в индивидуальном порядке. 
+<br><br>
 Максимальное количество людей находящихся в бане ограничено 5 человеками.
 </h1>
 </div>
 </center>
 
+<style>
+    /* Reduce line height and padding for service table */
+    #service td {
+        padding: 0.5vh 0vh;       /* vertical padding */
+    }
+    
+    #conditions td {
+        padding: 0.5vh 0vh;       /* vertical padding */
+    }
+</style>
+
 <center><h1>УСЛУГИ, ПРЕДОСТАВЛЯЕМЫЕ НАШИМ ГОСТЯМ:</h1></center>
 
-<table width="100%" border="0" cellspacing="0" cellpadding="4">
- <tr>
-  <td align=left><li>Индивидуальный комплекс с 09:00 до 17:00 в будние дни</td>
-  <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
+<table id="conditions" width="100%" border="0" cellspacing="0" cellpadding="4">
+ <tr align="left">
+  <td><li>Индивидуальный комплекс с 09:00 до 17:00 в будние дни</li></td>
+  <td align=right><? print str_pad ('', 40, ".", STR_PAD_BOTH);?></td>
   <td align=right nowrap><b style="color: RED;">900&nbsp;грн/2 часа</b></td>
  </tr>
 </table>
 
-<br>
-
 <center><h2>В эту стоимость входит:</h2></center>
 
-<ul>
-<li>Одна банная процедура на выбор клиента (за исключением массажа, купели, парения "По Царски", "Дуплета")
-<br><br>
-<li>Целебный &laquo;вкусный&raquo; пар в парной из свежей хвои, сена из летнего разнотравья, ржаной соломы, душистых трав, поваренной соли, эфирных масел, пива, кваса, прополиса, отваров и спиртовых настоек ароматических растений, приготовленный согласно старинных русских традиций
-<br><br>
-<li>Аренда банной обуви и банной шапки
-<br><br>
-<li>Аренда махрового полотенца
-<br><br>
-<li>Аренда банного веника
-<br><br>
-<li>Открытый бассейн для охлаждения после посещения парной
-<br><br>
-<li>Кадушка - водопад
-<br><br>
-<li>Уютная летняя площадка с топчанами для отдыха
-<br><br>
-<li>Wi-Fi интернет
-<br><br>
-<li>Удобная парковка
-</ul>
+<table id="service" width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr align="left"><td><li>Одна банная процедура на выбор клиента (за исключением массажа, купели, парения "По Царски", "Дуплета")</li></td></tr>
+  <tr align="left"><td><li>Целебный &laquo;вкусный&raquo; пар в парной из свежей хвои, сена из летнего разнотравья, ржаной соломы, душистых трав, поваренной соли, эфирных масел, пива, кваса, прополиса, отваров и спиртовых настоек ароматических растений, приготовленный согласно старинных традиций</li></td></tr>
+  <tr align="left"><td><li>Аренда банной обуви и банной шапки</li></td></tr>
+  <tr align="left"><td><li>Аренда махрового полотенца</li></td></tr>
+  <tr align="left"><td><li>Аренда банного веника</li></td></tr>
+  <tr align="left"><td><li>Открытый бассейн для охлаждения после посещения парной</li></td></tr>
+  <tr align="left"><td><li>Кадушка - водопад</li></td></tr>
+  <tr align="left"><td><li>Уютная летняя площадка с топчанами для отдыха</li></td></tr>
+  <tr align="left"><td><li>Wi-Fi интернет</li></td></tr>
+  <tr align="left"><td><li>Удобная парковка</li></td></tr>
+</table>
 
 <br>
 <br>
