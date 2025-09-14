@@ -19,7 +19,7 @@
   <tr valign="top">
    <td width="90">&nbsp;</td>
    <td align="center">
-<h1>Послуги, якi надаються нашим гостям:</h1>
+<h1>ПОСЛУГИ, ЯКІ НАДАЮТЬСЯ НАШИМ ГОСТЯМ:</h1>
    </td>
    <td width="100">&nbsp;</td>
   </tr>
@@ -34,19 +34,19 @@
  <tr>
   <td align=left><li>Вiдвiдування лазнi з 09:00 до 23:00 в буднi днi компанiями до 8 осiб</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right nowrap><b>780&nbsp;грн/год</b></td>
+  <td align=right nowrap><b>860&nbsp;грн/год</b></td>
  </tr>
 
  <tr>
   <td align=left><li>Вiдвiдування лазнi з 09:00 до 23:00 у вихiднi та святковi днi компанiями до 8 осiб</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right nowrap><b>900&nbsp;грн/год</b></td>
+  <td align=right nowrap><b>990&nbsp;грн/год</b></td>
  </tr>
 
  <tr>
   <td align=left><li>Кожен наступний вiдвiдувач</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right nowrap><b>110&nbsp;грн/год</b></td>
+  <td align=right nowrap><b>125&nbsp;грн/год</b></td>
  </tr>
 
 </table>
@@ -75,7 +75,7 @@
  <tr>
   <td align=left><li>Кожен наступний вiдвiдувач</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right nowrap><b>110&nbsp;грн/год</b></td>
+  <td align=right nowrap><b>125&nbsp;грн/год</b></td>
  </tr>
 </table>
 <br>
@@ -116,7 +116,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   на баннiй полицi з розтиранням тiла рукавицею з натуральних волокон або березовим вiником
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>410&nbsp;грн</b></td>
+  <td align=right><b>455&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -124,7 +124,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   iндивiдуальна програма для клiєнта
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>630&nbsp;грн</b></td>
+  <td align=right><b>700&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -132,7 +132,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   парiння вiником на баннiй полицi з розтиранням тiла льодом
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>455&nbsp;грн</b></td>
+  <td align=right><b>490&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -140,7 +140,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   подвiйне парiння вiником на баннiй полицi з купанням у холодному басейнi
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>710&nbsp;грн</b></td>
+  <td align=right><b>775&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -148,7 +148,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   парiння вiником на баннiй полицi з обливанням тiла холодною водою
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>455&nbsp;грн</b></td>
+  <td align=right><b>490&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -157,7 +157,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- прогрiвання на баннiй полицi за допомогою простирадла
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>435&nbsp;грн</b></td>
+  <td align=right><b>475&nbsp;грн</b></td>
  </tr>                
 
  <tr>
@@ -167,7 +167,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- розтирання тiла різними сортами меду
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>455&nbsp;грн</b></td>
+  <td align=right><b>495&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -177,7 +177,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- розтирання тiла рiзними сортами меду
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>455&nbsp;грн</b></td>
+  <td align=right><b>495&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -187,7 +187,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- розтирання тiла рiзними сортами меду
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>455&nbsp;грн</b></td>
+  <td align=right><b>495&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -197,7 +197,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- розтирання тiла рiзними сортами меду
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>455&nbsp;грн</b></td>
+  <td align=right><b>495&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -207,7 +207,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- прогрiвання на баннiй полицi
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>410&nbsp;грн</b></td>
+  <td align=right><b>455&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -217,7 +217,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- розтирання тiла рiзними сортами меду
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>455&nbsp;грн</b></td>
+  <td align=right><b>495&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -227,7 +227,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- розтирання тiла рiзними сортами меду
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>455&nbsp;грн</b></td>
+  <td align=right><b>495&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -237,7 +237,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- розтирання тiла рiзними сортами меду
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>510&nbsp;грн</b></td>
+  <td align=right><b>560&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -246,37 +246,37 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- вiдновлює сили
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>750&nbsp;грн</b></td>
+  <td align=right><b>800&nbsp;грн</b></td>
  </tr>
 
  <tr>
   <td align=left><li>Гарячий прогрiв вiником на баннiй полицi 3-4 хвилини</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>100&nbsp;грн</b></td>
+  <td align=right><b>155&nbsp;грн</b></td>
  </tr>
  
  <tr>
   <td align=left><li>Заспокiйливе оздоровче прогрiвання нiг в ящику з морською сiллю</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>110&nbsp;грн</b></td>
+  <td align=right><b>155&nbsp;грн</b></td>
  </tr>
 
  <tr>
   <td align=left><li>Баннi махрове та бавовняне простирадла (комплект)</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>130&nbsp;грн</b></td>
+  <td align=right><b>150&nbsp;грн</b></td>
  </tr>
 
  <tr>
   <td align=left><li>Банний махровий халат</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>150&nbsp;грн</b></td>
+  <td align=right><b>170&nbsp;грн</b></td>
  </tr>
 
  <tr>
   <td align=left><li>Вiник банний в асортиментi (дубовий, березовий, з канадського дубу)</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>125&nbsp;грн</b></td>
+  <td align=right><b>135&nbsp;грн</b></td>
  </tr>
 </table>
 
@@ -289,7 +289,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
 Одночасно з фiзичною напругою знiмається стрес i полiпшується самопочуття)
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>830&nbsp;грн</b></td>
+  <td align=right><b>1050&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -298,7 +298,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
 Нормализуеться внутрiшньочерепний тиск, знiмається стрес i головний бiль)
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>450&nbsp;грн</b></td>
+  <td align=right><b>460&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -307,7 +307,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
 М'язи стають еластичними, змiцнюються стiнки кровоносних судин).
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>450&nbsp;грн</b></td>
+  <td align=right><b>460&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -317,7 +317,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
 полiпшується циркуляцiя кровi в головному мозку, зменьшується вiдчуття втоми).
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>450&nbsp;грн</b></td>
+  <td align=right><b>460&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -326,7 +326,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
 М'язи стають еластичними, змiцнюються стiнки кровоносних судин).
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>450&nbsp;грн</b></td>
+  <td align=right><b>460&nbsp;грн</b></td>
  </tr>
 
  <tr>
@@ -336,7 +336,7 @@ iз свiжої хвої, сiна з лiтнього рiзнотрав'я,
 зняття м'язової напруги).
   </td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right><b>500&nbsp;грн</b></td>
+  <td align=right><b>550&nbsp;грн</b></td>
  </tr>
 
 </table>
