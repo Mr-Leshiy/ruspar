@@ -34,13 +34,13 @@
  <tr>
   <td align=left><li>ѕосещение бани с 09:00 до 23:00 в будние дни компани€ми до 8 человек</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right nowrap><b>860&nbsp;грн/час</b></td>
+  <td align=right nowrap><b>890&nbsp;грн/час</b></td>
  </tr>
 
  <tr>
   <td align=left><li>ѕосещение бани с 09:00 до 23:00 в выходные и праздничные дни компани€ми до 8 человек</td>
   <td align=right><? print str_pad ('', 15, ".", STR_PAD_BOTH);?></td>
-  <td align=right nowrap><b>990&nbsp;грн/час</b></td>
+  <td align=right nowrap><b>1015&nbsp;грн/час</b></td>
  </tr>
 
  <tr>
