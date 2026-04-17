@@ -1,0 +1,9 @@
+version: "2"
+services:
+  ruspar:
+    image: php:7.4.3-apache
+    ports:
+      - "8181:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./php.ini:/usr/local/etc/php/php.ini
