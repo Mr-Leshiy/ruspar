@@ -1,3 +1,0 @@
-# robots.txt for http://www.ruspar.od.ua
-User-Agent: *  
-Disallow: /admin/
