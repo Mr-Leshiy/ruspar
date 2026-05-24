@@ -334,7 +334,7 @@ $conditions = $priceData['conditions'];
                 <div class="bg-earth-cedar/5 rounded-2xl border border-earth-cedar/10 p-6 sm:p-8">
                     <div class="flex items-start gap-3">
                         <div class="flex-shrink-0 w-10 h-10 rounded-full bg-earth-terracotta/15 flex items-center justify-center mt-0.5">
-                            <span class="text-xl">⚠️</span>
+                            <span class="text-xl">💡</span>
                         </div>
                         <div>
                             <h3 class="font-display font-bold text-earth-cedar text-lg mb-3">Важлива інформація:</h3>
@@ -423,13 +423,13 @@ $conditions = $priceData['conditions'];
             <div class="py-8 border-t border-surface-cream/10">
                 <div class="mb-6 text-xs text-surface-cream/40 leading-relaxed space-y-4 text-center sm:text-left">
                     <p>
-                        Інформація, розміщена на сайті, носить ознайомлювальний характер і не є публічною офертою (згідно зі ст. 633 Цивільного кодексу України). Актуальні ціни, наявність вільних місць та умови надання послуг уточнюйте в адміністратора під час бронювання за телефоном.
+                        Інформація, розміщена на сайті, носить ознайомлювальний характер і не є публічною офертою. Актуальні ціни, наявність вільних місць та умови надання послуг уточнюйте в адміністратора під час бронювання за телефоном.
                     </p>
                     <p>
                         Відвідування лазні та супутні процедури мають протипоказання. Будь ласка, переконайтеся у відсутності обмежень за станом здоров'я.
                     </p>
                     <p>
-                        ФОП Пожиленков В. П., ІПН: &lt;TEMPORARY_REPLACEMENT&gt;. Юридична адреса: м. Одеса, вул. Єфімова, 15.
+                        ФОП Пожиленков В. П.. Юридична адреса: м. Одеса, вул. Єфімова, 15.
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-3">
