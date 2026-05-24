@@ -196,8 +196,7 @@ $rentalSection = $priceData['sections'][0];
                     <div
                         class="absolute inset-0 bg-earth-cedar/20 group-hover:bg-transparent transition-colors duration-500 z-10">
                     </div>
-                    <!-- TODO: Заглушка для головного фото лазні -->
-                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    <img src="images/new_gallery/banner.jpg"
                         alt="Інтер'єр нашої лазні"
                         class="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-700 absolute inset-0">
 
