@@ -328,33 +328,30 @@ $conditions = $priceData['conditions'];
             <?php endforeach; ?>
 
             <!-- ============================================ -->
-            <!-- Важливі умови -->
-             <!-- TODO: перенести цю плашку на верх страниці -->
+            <!-- Важлива інформація -->
             <!-- ============================================ -->
-            <?php if (!empty($conditions)): ?>
-                <div class="price-card">
-                    <div class="bg-earth-cedar/5 rounded-2xl border border-earth-cedar/10 p-6 sm:p-8">
-                        <div class="flex items-start gap-3">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-earth-terracotta/15 flex items-center justify-center mt-0.5">
-                                <svg class="w-5 h-5 text-earth-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="font-display font-bold text-earth-cedar text-lg mb-3">Важливі умови</h3>
-                                <ul class="space-y-2">
-                                    <?php foreach ($conditions as $condition): ?>
-                                        <li class="flex items-start gap-2 text-sm text-earth-cedar/80 leading-relaxed">
-                                            <span class="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-earth-terracotta/60 mt-2"></span>
-                                            <?php echo htmlspecialchars($condition); ?>
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
+            <div class="price-card">
+                <div class="bg-earth-cedar/5 rounded-2xl border border-earth-cedar/10 p-6 sm:p-8">
+                    <div class="flex items-start gap-3">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-earth-terracotta/15 flex items-center justify-center mt-0.5">
+                            <span class="text-xl">⚠️</span>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-earth-cedar text-lg mb-3">Важлива інформація:</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2 text-sm text-earth-cedar/80 leading-relaxed">
+                                    <span class="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-earth-terracotta/60 mt-2"></span>
+                                    Ціни дійсні за умови замовлення щонайменше однієї процедури на кожного гостя.
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-earth-cedar/80 leading-relaxed">
+                                    <span class="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-earth-terracotta/60 mt-2"></span>
+                                    На вказані ціни дія дисконтних карток та додаткові знижки не розповсюджуються.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            <?php endif; ?>
+            </div>
 
             <!-- CTA button -->
             <div class="text-center pt-4 pb-8">
@@ -422,10 +419,23 @@ $conditions = $priceData['conditions'];
                 </div>
             </div>
 
-            <!-- Bottom bar -->
-            <div class="py-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-                <p class="text-xs text-surface-cream/40">&copy; <?php echo date('Y'); ?> Банька «Легкий Пар». Всі права захищені.</p>
-                <a href="index.php" class="text-xs text-surface-cream/40 hover:text-primary transition-colors">Повернутися на головну &rarr;</a>
+            <!-- Legal & Bottom bar -->
+            <div class="py-8 border-t border-surface-cream/10">
+                <div class="mb-6 text-xs text-surface-cream/40 leading-relaxed space-y-4 text-center sm:text-left">
+                    <p>
+                        Інформація, розміщена на сайті, носить ознайомлювальний характер і не є публічною офертою (згідно зі ст. 633 Цивільного кодексу України). Актуальні ціни, наявність вільних місць та умови надання послуг уточнюйте в адміністратора під час бронювання за телефоном.
+                    </p>
+                    <p>
+                        Відвідування лазні та супутні процедури мають протипоказання. Будь ласка, переконайтеся у відсутності обмежень за станом здоров'я.
+                    </p>
+                    <p>
+                        ФОП Пожиленков В. П., ІПН: &lt;TEMPORARY_REPLACEMENT&gt;. Юридична адреса: м. Одеса, вул. Єфімова, 15.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-3">
+                    <p class="text-xs text-surface-cream/40">&copy; <?php echo date('Y'); ?> Банька «Легкий Пар». Всі права захищені.</p>
+                    <a href="index.php" class="text-xs text-surface-cream/40 hover:text-primary transition-colors">Повернутися на головну &rarr;</a>
+                </div>
             </div>
         </div>
     </footer>

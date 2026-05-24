@@ -356,9 +356,23 @@ $photos = include 'data/gallery.php';
                     </ul>
                 </div>
             </div>
-            <div class="py-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-                <p class="text-xs text-surface-cream/40">&copy; <?php echo date('Y'); ?> Банька «Легкий Пар». Всі права захищені.</p>
-                <a href="index.php" class="text-xs text-surface-cream/40 hover:text-primary transition-colors">Повернутися на головну &rarr;</a>
+            <!-- Legal & Bottom bar -->
+            <div class="py-8 border-t border-surface-cream/10">
+                <div class="mb-6 text-xs text-surface-cream/40 leading-relaxed space-y-4 text-center sm:text-left">
+                    <p>
+                        Інформація, розміщена на сайті, носить ознайомлювальний характер і не є публічною офертою (згідно зі ст. 633 Цивільного кодексу України). Актуальні ціни, наявність вільних місць та умови надання послуг уточнюйте в адміністратора під час бронювання за телефоном.
+                    </p>
+                    <p>
+                        Відвідування лазні та супутні процедури мають протипоказання. Будь ласка, переконайтеся у відсутності обмежень за станом здоров'я.
+                    </p>
+                    <p>
+                        ФОП Пожиленков В. П., ІПН: &lt;TEMPORARY_REPLACEMENT&gt;. Юридична адреса: м. Одеса, вул. Єфімова, 15.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-3">
+                    <p class="text-xs text-surface-cream/40">&copy; <?php echo date('Y'); ?> Банька «Легкий Пар». Всі права захищені.</p>
+                    <a href="index.php" class="text-xs text-surface-cream/40 hover:text-primary transition-colors">Повернутися на головну &rarr;</a>
+                </div>
             </div>
         </div>
     </footer>
