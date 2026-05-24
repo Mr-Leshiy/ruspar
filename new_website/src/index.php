@@ -258,6 +258,79 @@ $rentalSection = $priceData['sections'][0];
         </div>
     </section>
 
+    <!-- ============================================ -->
+    <!-- Футер -->
+    <!-- ============================================ -->
+    <footer class="bg-earth-cedar text-surface-cream/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Верхня секція -->
+            <div class="py-12 grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-surface-cream/10">
+                <!-- Логотип та слоган -->
+                <div>
+                    <a href="index.php" class="flex gap-3 items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center overflow-hidden">
+                            <img src="images/Legkiy_Par_Logo_Small.png" alt="Легкий Пар" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                        </div>
+                        <span class="font-display font-bold text-xl text-surface-cream tracking-wide">Легкий Пар</span>
+                    </a>
+                    <p class="text-surface-cream/50 text-sm leading-relaxed">
+                        Традиційна українська лазня з домашньою атмосферою та справжнім жаром.
+                    </p>
+                </div>
+
+                <!-- Навігація -->
+                <div>
+                    <h3 class="font-display font-bold text-surface-cream mb-4">Навігація</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.php" class="hover:text-primary transition-colors">Головна</a></li>
+                        <li><a href="prices.php" class="hover:text-primary transition-colors">Прайс-лист</a></li>
+                        <li><a href="menu.php" class="hover:text-primary transition-colors">Ресторан</a></li>
+                        <li><a href="gallery.php" class="hover:text-primary transition-colors">Галерея</a></li>
+                        <li><a href="contacts.php" class="hover:text-primary transition-colors">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <!-- Контактна інформація -->
+                <div>
+                    <h3 class="font-display font-bold text-surface-cream mb-4">Контакти</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-primary/60 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Щодня 09:00 – 23:00
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4 text-primary/60 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            Зателефонуйте нам
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Legal & Bottom bar -->
+            <div class="py-8 border-t border-surface-cream/10">
+                <div class="mb-6 text-xs text-surface-cream/40 leading-relaxed space-y-4 text-center sm:text-left">
+                    <p>
+                        Інформація, розміщена на сайті, носить ознайомлювальний характер і не є публічною офертою (згідно зі ст. 633 Цивільного кодексу України). Актуальні ціни, наявність вільних місць та умови надання послуг уточнюйте в адміністратора під час бронювання за телефоном.
+                    </p>
+                    <p>
+                        Відвідування лазні та супутні процедури мають протипоказання. Будь ласка, переконайтеся у відсутності обмежень за станом здоров'я.
+                    </p>
+                    <p>
+                        ФОП Пожиленков В. П., ІПН: &lt;TEMPORARY_REPLACEMENT&gt;. Юридична адреса: м. Одеса, вул. Єфімова, 15.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-3">
+                    <p class="text-xs text-surface-cream/40">&copy; <?php echo date('Y'); ?> Банька «Легкий Пар». Всі права захищені.</p>
+                    <a href="index.php" class="text-xs text-surface-cream/40 hover:text-primary transition-colors">Повернутися на головну &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- JavaScript: Мобільне Меню -->
     <script>
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
