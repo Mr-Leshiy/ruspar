@@ -313,8 +313,15 @@ $sections = $menuData['sections'];
             </div>
         </div>
 
+        <!-- Заборона -->
+        <div class="text-center pt-8 pb-2">
+            <p class="font-display font-bold text-earth-terracotta text-base sm:text-lg tracking-wide">
+                🚫 Приносити свої напої та продукти ЗАБОРОНЕНО
+            </p>
+        </div>
+
         <!-- CTA кнопка -->
-        <div class="text-center pt-10 pb-4">
+        <div class="text-center pt-4 pb-4">
             <a href="contacts.php#phones"
                 class="inline-flex items-center gap-2 bg-accent-forest hover:bg-earth-cedar text-white text-lg font-bold py-4 px-10 rounded-full shadow-soft transform hover:-translate-y-1 transition-all duration-300">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
