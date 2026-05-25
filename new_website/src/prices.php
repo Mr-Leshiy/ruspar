@@ -353,6 +353,13 @@ $conditions = $priceData['conditions'];
                 </div>
             </div>
 
+            <!-- Заборона -->
+            <div class="text-center pt-6 pb-2">
+                <p class="font-display font-bold text-earth-terracotta text-base sm:text-lg tracking-wide">
+                    🚫 Приносити свої напої та продукти ЗАБОРОНЕНО
+                </p>
+            </div>
+
             <!-- CTA button -->
             <div class="text-center pt-4 pb-8">
                 <a href="contacts.php#phones"
