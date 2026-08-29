@@ -62,6 +62,20 @@ $conditions = $priceData['conditions'];
         body {
             background-color: #F9B162;
             color: #2c2c2c;
+            position: relative;
+        }
+
+        /* Задній фон з розмиттям */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -10%; left: -10%; right: -10%; bottom: -10%;
+            z-index: -10;
+            background-image: var(--bg-photo, none);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(2px);
         }
 
         .heading-shadow {
@@ -107,6 +121,7 @@ $conditions = $priceData['conditions'];
     </style>
 </head>
 
+<!-- <body class="antialiased" style="--bg-photo: url('images/new_gallery/optimized/17.jpg');"> -->
 <body class="antialiased">
 
     <!-- ============================================ -->
@@ -176,12 +191,6 @@ $conditions = $priceData['conditions'];
     <!-- Заголовок сторінки Прайс-листа -->
     <!-- ============================================ -->
     <section class="pt-28 pb-12 relative overflow-hidden">
-        <!-- Warm ambient background blobs -->
-        <div class="absolute inset-0 pointer-events-none opacity-30">
-            <div class="absolute top-10 left-1/4 w-72 h-72 bg-surface-cream rounded-full filter blur-3xl"></div>
-            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-primaryDark rounded-full filter blur-3xl opacity-40"></div>
-        </div>
-
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-earth-cedar leading-tight mb-6 heading-shadow">
                 Прайс-лист
@@ -195,10 +204,9 @@ $conditions = $priceData['conditions'];
     <!-- ============================================ -->
     <!-- Швидка навігація по секціях -->
     <!-- ============================================ -->
-    <!-- TODO: зробити так щоб ця навігація була не липка а просто була; відцентрувати її -->
     <div class="sticky top-20 z-40 bg-primary/80 backdrop-blur-md border-y border-primaryDark/20 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex gap-2 py-3 overflow-x-auto scrollbar-hide">
+            <div class="flex justify-center gap-2 py-3 overflow-x-auto scrollbar-hide">
                 <?php foreach ($sections as $section): ?>
                     <?php if (isset($section['type']) && $section['type'] === 'features') continue; ?>
                     <a href="#<?php echo $section['id']; ?>"
@@ -436,7 +444,7 @@ $conditions = $priceData['conditions'];
                         Відвідування лазні та супутні процедури мають протипоказання. Будь ласка, переконайтеся у відсутності обмежень за станом здоров'я.
                     </p>
                     <p>
-                        ФОП Пожиленков В. П.. Юридична адреса: м. Одеса, вул. Єфімова, 15.
+                        Юридична адреса: м. Одеса, вул. Єфімова, 15.
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-3">

@@ -1,4 +1,5 @@
 .vscode
+.DS_Store
 
 # Tenet credentials
 tenet_credentials*

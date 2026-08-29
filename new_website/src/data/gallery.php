@@ -23,29 +23,30 @@
 // =========================================================================
 
 return [
-    // — Інтер'єр та атмосфера —
-    ['thumb' => 'images/gallery/001_p.jpg', 'full' => 'images/gallery/001_b.jpg', 'alt' => 'Затишний інтер\'єр лазні'],
-    ['thumb' => 'images/gallery/002_p.jpg', 'full' => 'images/gallery/002_b.jpg', 'alt' => 'Зона відпочинку'],
-    ['thumb' => 'images/gallery/003_p.jpg', 'full' => 'images/gallery/003_b.jpg', 'alt' => 'Кімната релаксу'],
-    ['thumb' => 'images/gallery/004_p.jpg', 'full' => 'images/gallery/004_b.jpg', 'alt' => 'Трапезна'],
-    ['thumb' => 'images/gallery/005_p.jpg', 'full' => 'images/gallery/005_b.jpg', 'alt' => 'Декор та інтер\'єр'],
-    ['thumb' => 'images/gallery/006_p.jpg', 'full' => 'images/gallery/006_b.jpg', 'alt' => 'Частина комплексу'],
+    ['thumb' => 'images/new_gallery/thumb/0.jpg', 'full' => 'images/new_gallery/optimized/0.jpg', 'alt' => 'Зимній фасад комплексу'],
+    ['thumb' => 'images/new_gallery/thumb/1.jpg', 'full' => 'images/new_gallery/optimized/1.jpg', 'alt' => 'Внутрішній дворик'],
+    ['thumb' => 'images/new_gallery/thumb/2.jpg', 'full' => 'images/new_gallery/optimized/2.jpg', 'alt' => 'Внутрішній дворик'],
+    ['thumb' => 'images/new_gallery/thumb/3.jpg', 'full' => 'images/new_gallery/optimized/3.jpg', 'alt' => 'Басейна зона'],
+    ['thumb' => 'images/new_gallery/thumb/4.jpg', 'full' => 'images/new_gallery/optimized/4.jpg', 'alt' => 'Басейна зона'],
 
-    // — Парна та процедури —
-    ['thumb' => 'images/gallery/007_p.jpg', 'full' => 'images/gallery/007_b.jpg', 'alt' => 'Парна кімната'],
-    ['thumb' => 'images/gallery/008_p.jpg', 'full' => 'images/gallery/008_b.jpg', 'alt' => 'Процедурна зона'],
-    ['thumb' => 'images/gallery/009_p.jpg', 'full' => 'images/gallery/009_b.jpg', 'alt' => 'Атмосфера парної'],
-    ['thumb' => 'images/gallery/010_p.jpg', 'full' => 'images/gallery/010_b.jpg', 'alt' => 'Віники та приладдя'],
+    ['thumb' => 'images/new_gallery/thumb/5.jpg', 'full' => 'images/new_gallery/optimized/5.jpg', 'alt' => 'Розслаблююча купіль'],
+    ['thumb' => 'images/new_gallery/thumb/6.jpg', 'full' => 'images/new_gallery/optimized/6.jpg', 'alt' => 'Процедурна зона'],
+    ['thumb' => 'images/new_gallery/thumb/7.jpg', 'full' => 'images/new_gallery/optimized/7.jpg', 'alt' => 'Трапезна'],
+    ['thumb' => 'images/new_gallery/thumb/8.jpg', 'full' => 'images/new_gallery/optimized/8.jpg', 'alt' => 'Літній майданчик'],
+    ['thumb' => 'images/new_gallery/thumb/9.jpg', 'full' => 'images/new_gallery/optimized/9.jpg', 'alt' => 'Ресторан'],
 
-    // — Басейн та територія —
-    ['thumb' => 'images/gallery/011_p.jpg', 'full' => 'images/gallery/011_b.jpg', 'alt' => 'Басейн для охолодження'],
-    ['thumb' => 'images/gallery/012_p.jpg', 'full' => 'images/gallery/012_b.jpg', 'alt' => 'Літній майданчик'],
-    ['thumb' => 'images/gallery/013_p.jpg', 'full' => 'images/gallery/013_b.jpg', 'alt' => 'Територія комплексу'],
-    ['thumb' => 'images/gallery/014_p.jpg', 'full' => 'images/gallery/014_b.jpg', 'alt' => 'Зовнішній вигляд'],
-    ['thumb' => 'images/gallery/015_p.jpg', 'full' => 'images/gallery/015_b.jpg', 'alt' => 'Панорама комплексу'],
+    ['thumb' => 'images/new_gallery/thumb/10.jpg', 'full' => 'images/new_gallery/optimized/10.jpg', 'alt' => 'Декор та інтер\'єр'],
+    ['thumb' => 'images/new_gallery/thumb/11.jpg', 'full' => 'images/new_gallery/optimized/11.jpg', 'alt' => 'Басейн для охолодження'],
+    ['thumb' => 'images/new_gallery/thumb/14.jpg', 'full' => 'images/new_gallery/optimized/14.jpg', 'alt' => 'Панорама комплексу'],
+    ['thumb' => 'images/new_gallery/thumb/16.jpg', 'full' => 'images/new_gallery/optimized/16.jpg', 'alt' => 'Процедурна зона'],
+    ['thumb' => 'images/new_gallery/thumb/17.jpg', 'full' => 'images/new_gallery/optimized/17.jpg', 'alt' => 'Зона відпочинку'],
 
-    // — Додаткові фото (gallery2) —
-    ['thumb' => 'images/gallery2/01s.jpg', 'full' => 'images/gallery2/01.jpg', 'alt' => 'Нові фото комплексу'],
-    ['thumb' => 'images/gallery2/02s.jpg', 'full' => 'images/gallery2/02.jpg', 'alt' => 'Оновлений інтер\'єр'],
-    ['thumb' => 'images/gallery2/03s.jpg', 'full' => 'images/gallery2/03.jpg', 'alt' => 'Нова зона відпочинку'],
-];
+    ['thumb' => 'images/new_gallery/thumb/18.jpg', 'full' => 'images/new_gallery/optimized/18.jpg', 'alt' => 'Роздягальня'],
+    ['thumb' => 'images/new_gallery/thumb/19.jpg', 'full' => 'images/new_gallery/optimized/19.jpg', 'alt' => 'Внутрішній дворик'],
+    ['thumb' => 'images/new_gallery/thumb/20.jpg', 'full' => 'images/new_gallery/optimized/20.jpg', 'alt' => 'Декор та інтер\'єр'],
+    ['thumb' => 'images/new_gallery/thumb/21.jpg', 'full' => 'images/new_gallery/optimized/21.jpg', 'alt' => 'Зона відпочинку'],
+    ['thumb' => 'images/new_gallery/thumb/22.jpg', 'full' => 'images/new_gallery/optimized/22.jpg', 'alt' => 'Літній майданчик'],
+
+    ['thumb' => 'images/new_gallery/thumb/23.jpg', 'full' => 'images/new_gallery/optimized/23.jpg', 'alt' => 'Декор та інтер\'єр'],
+    ['thumb' => 'images/new_gallery/thumb/24.jpg', 'full' => 'images/new_gallery/optimized/24.jpg', 'alt' => 'Басейна зона'],
+    ];

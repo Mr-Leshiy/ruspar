@@ -61,6 +61,20 @@ $sections = $menuData['sections'];
         body {
             background-color: #F9B162;
             color: #2c2c2c;
+            position: relative;
+        }
+
+        /* Задній фон з розмиттям */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -10%; left: -10%; right: -10%; bottom: -10%;
+            z-index: -10;
+            background-image: var(--bg-photo, none);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(2px);
         }
 
         .heading-shadow {
@@ -204,12 +218,6 @@ $sections = $menuData['sections'];
     <!-- Заголовок сторінки Меню -->
     <!-- ============================================ -->
     <section class="pt-28 pb-10 relative overflow-hidden">
-        <!-- Декоративні плями -->
-        <div class="absolute inset-0 pointer-events-none opacity-30">
-            <div class="absolute top-10 right-1/4 w-72 h-72 bg-surface-cream rounded-full filter blur-3xl"></div>
-            <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-primaryDark rounded-full filter blur-3xl opacity-40"></div>
-        </div>
-
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-earth-cedar leading-tight mb-5 heading-shadow">
                 Меню ресторану
@@ -219,6 +227,23 @@ $sections = $menuData['sections'];
             </p>
         </div>
     </section>
+
+    <!-- ============================================ -->
+    <!-- Швидка навігація по секціях -->
+    <!-- ============================================ -->
+    <!-- <div class="sticky top-20 z-40 bg-primary/80 backdrop-blur-md border-y border-primaryDark/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 py-3">
+                <?php foreach ($sections as $section): ?>
+                    <a href="#<?php echo $section['id']; ?>"
+                       class="px-4 py-2 rounded-full text-sm font-medium bg-surface-cream/60 hover:bg-surface-cream text-earth-cedar hover:text-earth-terracotta transition-all duration-200 border border-transparent hover:border-primary/40 text-center">
+                        <span class="mr-1"><?php echo $section['icon']; ?></span>
+                        <?php echo htmlspecialchars($section['title']); ?>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div> -->
 
     <!-- ============================================ -->
     <!-- Навігація по категоріях -->
@@ -394,7 +419,7 @@ $sections = $menuData['sections'];
                         Відвідування лазні та супутні процедури мають протипоказання. Будь ласка, переконайтеся у відсутності обмежень за станом здоров'я.
                     </p>
                     <p>
-                        ФОП Пожиленков В. П.. Юридична адреса: м. Одеса, вул. Єфімова, 15.
+                        Юридична адреса: м. Одеса, вул. Єфімова, 15.
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-3">

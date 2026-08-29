@@ -63,8 +63,22 @@ $rentalSection = $priceData['sections'][0];
     <style>
         /* Custom Styles for Neo-Traditional Vibe */
         body {
-            background-color: theme('colors.surface.cream');
+            
             color: theme('colors.surface.charcoal');
+            position: relative;
+        }
+
+        /* Задній фон з розмиттям */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -10%; left: -10%; right: -10%; bottom: -10%;
+            z-index: -10;
+            background-image: var(--bg-photo, none);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(2px);
         }
 
         .heading-shadow {
@@ -80,6 +94,7 @@ $rentalSection = $priceData['sections'][0];
     </style>
 </head>
 
+<!-- <body class="antialiased" style="--bg-photo: url('images/new_gallery/optimized/17.jpg');"> -->
 <body class="antialiased">
 
     <!-- Стійка навігація (Sticky Navigation) -->
@@ -146,19 +161,6 @@ $rentalSection = $priceData['sections'][0];
 
     <!-- Геройська Секція (Hero Section) -->
     <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-pattern">
-        <!-- Декоративні елементи "пару" -->
-        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-40">
-            <div
-                class="absolute top-20 left-10 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse">
-            </div>
-            <div
-                class="absolute top-40 right-10 w-96 h-96 bg-surface-cream rounded-full mix-blend-multiply filter blur-3xl opacity-70">
-            </div>
-            <div
-                class="absolute -bottom-8 left-1/2 w-96 h-96 bg-primaryDark rounded-full mix-blend-multiply filter blur-3xl opacity-30">
-            </div>
-        </div>
-
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto">
                 <div
@@ -221,7 +223,7 @@ $rentalSection = $priceData['sections'][0];
     </section>
 
     <!-- Демонстрація виведення даних (Прайс-лист прев'ю) -->
-    <section id="prices" class="py-20 bg-surface-cream relative z-20">
+    <section id="prices" class="py-20 bg-transparent relative z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="font-display text-4xl font-bold text-center text-earth-cedar mb-12">Популярні послуги</h2>
 
@@ -320,7 +322,7 @@ $rentalSection = $priceData['sections'][0];
                         Відвідування лазні та супутні процедури мають протипоказання. Будь ласка, переконайтеся у відсутності обмежень за станом здоров'я.
                     </p>
                     <p>
-                        ФОП Пожиленков В. П.. Юридична адреса: м. Одеса, вул. Єфімова, 15.
+                        Юридична адреса: м. Одеса, вул. Єфімова, 15.
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-3">

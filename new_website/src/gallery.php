@@ -60,6 +60,20 @@ $photos = include 'data/gallery.php';
         body {
             background-color: #F9B162;
             color: #2c2c2c;
+            position: relative;
+        }
+
+        /* Задній фон з розмиттям */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -10%; left: -10%; right: -10%; bottom: -10%;
+            z-index: -10;
+            background-image: var(--bg-photo, none);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(2px);
         }
 
         .heading-shadow {
@@ -130,6 +144,7 @@ $photos = include 'data/gallery.php';
     </style>
 </head>
 
+<!-- <body class="antialiased" style="--bg-photo: url('images/new_gallery/optimized/17.jpg');"> -->
 <body class="antialiased">
 
     <!-- ============================================ -->
@@ -199,11 +214,6 @@ $photos = include 'data/gallery.php';
     <!-- Заголовок сторінки Галереї -->
     <!-- ============================================ -->
     <section class="pt-28 pb-10 relative overflow-hidden">
-        <div class="absolute inset-0 pointer-events-none opacity-30">
-            <div class="absolute top-10 left-1/3 w-72 h-72 bg-surface-cream rounded-full filter blur-3xl"></div>
-            <div class="absolute bottom-0 right-1/3 w-96 h-96 bg-primaryDark rounded-full filter blur-3xl opacity-40"></div>
-        </div>
-
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-earth-cedar leading-tight mb-5 heading-shadow">
                 Галерея
@@ -366,7 +376,7 @@ $photos = include 'data/gallery.php';
                         Відвідування лазні та супутні процедури мають протипоказання. Будь ласка, переконайтеся у відсутності обмежень за станом здоров'я.
                     </p>
                     <p>
-                        ФОП Пожиленков В. П.. Юридична адреса: м. Одеса, вул. Єфімова, 15.
+                        Юридична адреса: м. Одеса, вул. Єфімова, 15.
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-3">
