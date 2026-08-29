@@ -242,7 +242,7 @@ $photos = include 'data/gallery.php';
                          aria-label="Відкрити фото: <?php echo htmlspecialchars($photo['alt']); ?>">
                         <div class="relative overflow-hidden rounded-2xl shadow-soft border-2 border-surface-cream/80 bg-surface-cream aspect-[4/3]">
                             <!-- Зображення -->
-                            <img src="<?php echo htmlspecialchars($photo['thumb']); ?>"
+                            <img src="<?php echo htmlspecialchars($photo['thumb']) . '?v=' . (file_exists($photo['thumb']) ? filemtime($photo['thumb']) : ''); ?>"
                                  alt="<?php echo htmlspecialchars($photo['alt']); ?>"
                                  loading="lazy"
                                  class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110">
@@ -402,7 +402,7 @@ $photos = include 'data/gallery.php';
 
         // ---- Лайтбокс (Vanilla JS, без залежностей) ----
         const photos = <?php echo json_encode(array_map(function($p) {
-            return ['full' => $p['full'], 'alt' => $p['alt']];
+            return ['full' => $p['full'] . '?v=' . (file_exists($p['full']) ? filemtime($p['full']) : ''), 'alt' => $p['alt']];
         }, $photos), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?>;
 
         let currentIndex = 0;
