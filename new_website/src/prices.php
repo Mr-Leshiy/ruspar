@@ -86,6 +86,16 @@ $conditions = $priceData['conditions'];
             text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
         }
 
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .scrollbar-hide {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
         /* Leader dots between service name and price */
         .leader-row {
             display: flex;

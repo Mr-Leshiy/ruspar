@@ -77,23 +77,36 @@ $sections = $menuData['sections'];
             filter: blur(2px);
         }
 
-        .heading-shadow {
-            text-shadow: 2px 2px 0px rgba(253, 251, 247, 0.8),
-                4px 4px 6px rgba(94, 58, 47, 0.1);
+        /* Generic reusable classes for text shadows over photo backgrounds */
+        .shadow-text-strong {
+            text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8), 0px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        .shadow-text-light {
+            text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
         }
 
-        /* Лінія-пунктир між назвою страви та ціною */
-        .menu-leader {
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .scrollbar-hide {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Leader dots between dish name and price */
+        .leader-row {
             display: flex;
             align-items: baseline;
-            gap: 0.4rem;
+            gap: 0.5rem;
         }
 
-        .menu-dots {
+        .leader-dots {
             flex: 1;
-            border-bottom: 1.5px dotted rgba(94, 58, 47, 0.18);
-            min-width: 16px;
-            margin-bottom: 3px;
+            border-bottom: 2px dotted rgba(94, 58, 47, 0.2);
+            min-width: 20px;
+            margin-bottom: 4px;
         }
 
         /* Двоколонковий масонрі-лейаут для десктопу */
@@ -140,16 +153,10 @@ $sections = $menuData['sections'];
         .menu-category:nth-child(10) { animation-delay: 0.58s; }
         .menu-category:nth-child(11) { animation-delay: 0.64s; }
         .menu-category:nth-child(12) { animation-delay: 0.70s; }
-
-        /* Декоративна лінійка у заголовку категорії */
-        .category-divider {
-            height: 2px;
-            background: linear-gradient(90deg, rgba(94, 58, 47, 0.25) 0%, rgba(249, 177, 98, 0.3) 50%, transparent 100%);
-        }
     </style>
 </head>
 
-<body class="antialiased">
+<body class="antialiased" style="--bg-photo: url('images/new_gallery/optimized/17.jpg');">
 
     <!-- ============================================ -->
     <!-- Стійка навігація (Sticky Navigation) -->
@@ -217,12 +224,12 @@ $sections = $menuData['sections'];
     <!-- ============================================ -->
     <!-- Заголовок сторінки Меню -->
     <!-- ============================================ -->
-    <section class="pt-28 pb-10 relative overflow-hidden">
+    <section class="pt-28 pb-12 relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-earth-cedar leading-tight mb-5 heading-shadow">
+            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-surface-cream leading-tight mb-6 shadow-text-strong">
                 Меню ресторану
             </h1>
-            <p class="text-lg text-earth-cedar/80 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-lg md:text-xl text-surface-cream/90 max-w-2xl mx-auto leading-relaxed shadow-text-light font-medium">
                 Домашня українська кухня, страви з мангалу та ароматні напої — все, щоб доповнити ваш відпочинок.
             </p>
         </div>
@@ -231,49 +238,34 @@ $sections = $menuData['sections'];
     <!-- ============================================ -->
     <!-- Швидка навігація по секціях -->
     <!-- ============================================ -->
-    <!-- <div class="sticky top-20 z-40 bg-primary/80 backdrop-blur-md border-y border-primaryDark/20 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 py-3">
+    <div class="sticky top-24 z-40 pb-6 pointer-events-none">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <div class="pointer-events-auto flex gap-2 p-1.5 rounded-full bg-surface-cream/95 backdrop-blur-md border border-primary/20 shadow-soft overflow-x-auto scrollbar-hide max-w-full">
                 <?php foreach ($sections as $section): ?>
                     <a href="#<?php echo $section['id']; ?>"
-                       class="px-4 py-2 rounded-full text-sm font-medium bg-surface-cream/60 hover:bg-surface-cream text-earth-cedar hover:text-earth-terracotta transition-all duration-200 border border-transparent hover:border-primary/40 text-center">
-                        <span class="mr-1"><?php echo $section['icon']; ?></span>
+                       class="flex-shrink-0 px-5 py-2.5 rounded-full text-sm font-bold bg-transparent hover:bg-earth-terracotta hover:text-white text-earth-cedar transition-all duration-300 whitespace-nowrap shadow-none hover:shadow-md">
+                        <span class="mr-1.5"><?php echo $section['icon']; ?></span>
                         <?php echo htmlspecialchars($section['title']); ?>
                     </a>
                 <?php endforeach; ?>
             </div>
         </div>
-    </div> -->
-
-    <!-- ============================================ -->
-    <!-- Навігація по категоріях -->
-    <!-- ============================================ -->
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-6">
-        <div class="flex flex-wrap gap-2 justify-center">
-            <?php foreach ($sections as $section): ?>
-                <a href="#<?php echo $section['id']; ?>"
-                   class="px-4 py-2 rounded-full text-sm font-medium bg-surface-cream/60 hover:bg-surface-cream text-earth-cedar hover:text-earth-terracotta transition-all duration-200 border border-transparent hover:border-primary/40">
-                    <span class="mr-1"><?php echo $section['icon']; ?></span><?php echo htmlspecialchars($section['title']); ?>
-                </a>
-            <?php endforeach; ?>
-        </div>
     </div>
 
     <!-- ============================================ -->
     <!-- Контент Меню — Двоколонковий Масонрі -->
-    <!-- TODO: деякі позиції треба підігнати по ширині. Довгий текст - зʼїзжає ціна. -->
     <!-- ============================================ -->
     <main class="pb-16 pt-2">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="menu-masonry">
 
                 <?php foreach ($sections as $section): ?>
-                    <div id="<?php echo $section['id']; ?>" class="menu-category scroll-mt-28">
+                    <div id="<?php echo $section['id']; ?>" class="menu-category scroll-mt-36">
                         <div class="bg-surface-cream rounded-3xl shadow-soft overflow-hidden border border-primary/15">
 
                             <!-- Заголовок категорії -->
-                            <div class="px-6 sm:px-7 pt-6 pb-4">
-                                <div class="flex items-center gap-3 mb-2">
+                            <div class="bg-gradient-to-r from-earth-cedar/5 to-primary/10 px-6 sm:px-7 py-4 border-b border-primary/15">
+                                <div class="flex items-center gap-3">
                                     <span class="text-2xl"><?php echo $section['icon']; ?></span>
                                     <div>
                                         <h2 class="font-display text-xl sm:text-2xl font-bold text-earth-cedar">
@@ -284,30 +276,31 @@ $sections = $menuData['sections'];
                                         <?php endif; ?>
                                     </div>
                                 </div>
-                                <div class="category-divider"></div>
                             </div>
 
                             <!-- Позиції меню -->
-                            <div class="px-6 sm:px-7 pb-5 space-y-0">
+                            <div class="divide-y divide-primary/10">
                                 <?php foreach ($section['items'] as $index => $item): ?>
-                                    <div class="group py-3 rounded-lg px-1 -mx-1 hover:bg-primary/[0.06] transition-colors duration-150 <?php echo $index < count($section['items']) - 1 ? 'border-b border-primary/[0.07]' : ''; ?>">
+                                    <div class="group px-6 sm:px-7 py-3 hover:bg-primary/8 transition-colors duration-200 <?php echo $index % 2 === 0 ? 'bg-transparent' : 'bg-primary/[0.03]'; ?>">
 
                                         <!-- Назва страви + пунктир + ціна -->
-                                        <div class="menu-leader">
-                                            <span class="font-semibold text-earth-cedar text-[15px] group-hover:text-earth-terracotta transition-colors duration-150 flex-shrink-0 max-w-[55%] sm:max-w-[65%]">
-                                                <?php echo htmlspecialchars($item['name']); ?>
-                                            </span>
-                                            <span class="menu-dots hidden sm:block"></span>
+                                        <div class="leader-row">
+                                            <div class="flex-shrink-0 max-w-[55%] sm:max-w-[65%]">
+                                                <span class="font-semibold text-earth-cedar text-[15px] group-hover:text-earth-terracotta transition-colors duration-200">
+                                                    <?php echo htmlspecialchars($item['name']); ?>
+                                                </span>
+                                            </div>
+                                            <span class="leader-dots hidden sm:block"></span>
 
                                             <!-- Порція/Вага (бейдж) -->
                                             <?php if (!empty($item['portion']) && $item['portion'] !== '—'): ?>
-                                                <span class="flex-shrink-0 text-xs text-surface-charcoal/40 font-medium bg-primary/10 px-2 py-0.5 rounded-full hidden sm:inline-block">
+                                                <span class="flex-shrink-0 text-xs text-surface-charcoal/50 font-medium hidden sm:inline-block mr-2">
                                                     <?php echo htmlspecialchars($item['portion']); ?>
                                                 </span>
                                             <?php endif; ?>
 
                                             <!-- Ціна -->
-                                            <span class="flex-shrink-0 font-display font-bold text-accent-forest text-base sm:text-lg whitespace-nowrap ml-auto sm:ml-2">
+                                            <span class="flex-shrink-0 font-display font-bold text-accent-forest text-base sm:text-lg whitespace-nowrap ml-auto sm:ml-0">
                                                 <?php echo htmlspecialchars($item['price']); ?>
                                             </span>
                                         </div>
@@ -322,7 +315,7 @@ $sections = $menuData['sections'];
                                         <!-- Порція на мобільному -->
                                         <?php if (!empty($item['portion']) && $item['portion'] !== '—'): ?>
                                             <div class="sm:hidden mt-1.5">
-                                                <span class="inline-block text-xs bg-primary/10 text-earth-cedar/60 px-2 py-0.5 rounded-full">
+                                                <span class="inline-block text-xs bg-primary/15 text-earth-cedar px-2.5 py-0.5 rounded-full font-medium">
                                                     <?php echo htmlspecialchars($item['portion']); ?>
                                                 </span>
                                             </div>
@@ -339,10 +332,23 @@ $sections = $menuData['sections'];
         </div>
 
         <!-- Заборона -->
-        <div class="text-center pt-8 pb-2">
-            <p class="font-display font-bold text-earth-terracotta text-base sm:text-lg tracking-wide">
-                🚫 Приносити свої напої та продукти ЗАБОРОНЕНО
-            </p>
+        <div class="flex justify-center pt-8 pb-4 px-4 w-full">
+            <div class="w-fit bg-surface-cream rounded-2xl border-2 border-earth-terracotta/30 py-5 px-6 sm:px-8 shadow-glow relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-2 h-full bg-earth-terracotta"></div>
+                <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 ml-2">
+                    <div class="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-earth-terracotta/10 flex items-center justify-center">
+                        <span class="text-2xl sm:text-3xl">🚫</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="font-display font-bold text-earth-terracotta text-lg sm:text-xl tracking-wide leading-snug text-center">
+                            Приносити свої напої та продукти
+                        </p>
+                        <p class="font-display font-extrabold text-earth-terracotta text-xl sm:text-2xl tracking-widest uppercase mt-1 text-center">
+                            ЗАБОРОНЕНО
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- CTA кнопка -->

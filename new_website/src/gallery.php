@@ -76,9 +76,12 @@ $photos = include 'data/gallery.php';
             filter: blur(2px);
         }
 
-        .heading-shadow {
-            text-shadow: 2px 2px 0px rgba(253, 251, 247, 0.8),
-                4px 4px 6px rgba(94, 58, 47, 0.1);
+        /* Generic reusable classes for text shadows over photo backgrounds */
+        .shadow-text-strong {
+            text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8), 0px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        .shadow-text-light {
+            text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
         }
 
         /* Плавна поява фото */
@@ -144,8 +147,7 @@ $photos = include 'data/gallery.php';
     </style>
 </head>
 
-<!-- <body class="antialiased" style="--bg-photo: url('images/new_gallery/optimized/17.jpg');"> -->
-<body class="antialiased">
+<body class="antialiased" style="--bg-photo: url('images/new_gallery/optimized/17.jpg');">
 
     <!-- ============================================ -->
     <!-- Стійка навігація (Sticky Navigation) -->
@@ -213,15 +215,15 @@ $photos = include 'data/gallery.php';
     <!-- ============================================ -->
     <!-- Заголовок сторінки Галереї -->
     <!-- ============================================ -->
-    <section class="pt-28 pb-10 relative overflow-hidden">
+    <section class="pt-28 pb-12 relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-earth-cedar leading-tight mb-5 heading-shadow">
+            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-surface-cream leading-tight mb-6 shadow-text-strong">
                 Галерея
             </h1>
-            <p class="text-lg text-earth-cedar/80 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-lg md:text-xl text-surface-cream/90 max-w-2xl mx-auto leading-relaxed shadow-text-light font-medium">
                 Зазирніть у нашу лазню — фотографії передають атмосферу тепла, затишку та справжнього відпочинку.
             </p>
-            <p class="text-sm text-earth-cedar/50 mt-3">
+            <p class="text-sm md:text-base text-surface-cream/80 mt-3 shadow-text-light font-medium">
                 <?php echo count($photos); ?> фото · Натисніть для збільшення
             </p>
         </div>
@@ -237,6 +239,7 @@ $photos = include 'data/gallery.php';
                 <?php foreach ($photos as $index => $photo): ?>
                     <div class="gallery-item group cursor-pointer"
                          onclick="openLightbox(<?php echo $index; ?>)"
+                         onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openLightbox(<?php echo $index; ?>); }"
                          role="button"
                          tabindex="0"
                          aria-label="Відкрити фото: <?php echo htmlspecialchars($photo['alt']); ?>">
