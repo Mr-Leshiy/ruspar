@@ -78,9 +78,12 @@ $conditions = $priceData['conditions'];
             filter: blur(2px);
         }
 
-        .heading-shadow {
-            text-shadow: 2px 2px 0px rgba(253, 251, 247, 0.8),
-                4px 4px 6px rgba(94, 58, 47, 0.1);
+        /* Generic reusable classes for text shadows over photo backgrounds */
+        .shadow-text-strong {
+            text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8), 0px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        .shadow-text-light {
+            text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
         }
 
         /* Leader dots between service name and price */
@@ -121,8 +124,7 @@ $conditions = $priceData['conditions'];
     </style>
 </head>
 
-<!-- <body class="antialiased" style="--bg-photo: url('images/new_gallery/optimized/17.jpg');"> -->
-<body class="antialiased">
+<body class="antialiased" style="--bg-photo: url('images/new_gallery/optimized/17.jpg');">
 
     <!-- ============================================ -->
     <!-- Стійка навігація (Sticky Navigation) -->
@@ -192,10 +194,10 @@ $conditions = $priceData['conditions'];
     <!-- ============================================ -->
     <section class="pt-28 pb-12 relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-earth-cedar leading-tight mb-6 heading-shadow">
+            <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-surface-cream leading-tight mb-6 shadow-text-strong">
                 Прайс-лист
             </h1>
-            <p class="text-lg text-earth-cedar/80 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-lg md:text-xl text-surface-cream/90 max-w-2xl mx-auto leading-relaxed shadow-text-light font-medium">
                 Оберіть процедури для ідеального відпочинку. Наші ціни включають все необхідне для вашого комфорту.
             </p>
         </div>
@@ -204,14 +206,14 @@ $conditions = $priceData['conditions'];
     <!-- ============================================ -->
     <!-- Швидка навігація по секціях -->
     <!-- ============================================ -->
-    <div class="sticky top-20 z-40 bg-primary/80 backdrop-blur-md border-y border-primaryDark/20 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-center gap-2 py-3 overflow-x-auto scrollbar-hide">
+    <div class="sticky top-24 z-40 pb-6 pointer-events-none">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <div class="pointer-events-auto flex gap-2 p-1.5 rounded-full bg-surface-cream/95 backdrop-blur-md border border-primary/20 shadow-soft overflow-x-auto scrollbar-hide max-w-full">
                 <?php foreach ($sections as $section): ?>
                     <?php if (isset($section['type']) && $section['type'] === 'features') continue; ?>
                     <a href="#<?php echo $section['id']; ?>"
-                       class="flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium bg-surface-cream/60 hover:bg-surface-cream text-earth-cedar hover:text-earth-terracotta transition-all duration-200 border border-transparent hover:border-primary/40">
-                        <span class="mr-1"><?php echo $section['icon']; ?></span>
+                       class="flex-shrink-0 px-5 py-2.5 rounded-full text-sm font-bold bg-transparent hover:bg-earth-terracotta hover:text-white text-earth-cedar transition-all duration-300 whitespace-nowrap shadow-none hover:shadow-md">
+                        <span class="mr-1.5"><?php echo $section['icon']; ?></span>
                         <?php echo htmlspecialchars($section['title']); ?>
                     </a>
                 <?php endforeach; ?>
@@ -338,34 +340,49 @@ $conditions = $priceData['conditions'];
             <!-- ============================================ -->
             <!-- Важлива інформація -->
             <!-- ============================================ -->
-            <div class="price-card">
-                <div class="bg-earth-cedar/5 rounded-2xl border border-earth-cedar/10 p-6 sm:p-8">
-                    <div class="flex items-start gap-3">
-                        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-earth-terracotta/15 flex items-center justify-center mt-0.5">
-                            <span class="text-xl">💡</span>
-                        </div>
-                        <div>
-                            <h3 class="font-display font-bold text-earth-cedar text-lg mb-3">Важлива інформація:</h3>
-                            <ul class="space-y-2">
-                                <li class="flex items-start gap-2 text-sm text-earth-cedar/80 leading-relaxed">
-                                    <span class="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-earth-terracotta/60 mt-2"></span>
-                                    Ціни дійсні за умови замовлення щонайменше однієї процедури на кожного гостя.
-                                </li>
-                                <li class="flex items-start gap-2 text-sm text-earth-cedar/80 leading-relaxed">
-                                    <span class="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-earth-terracotta/60 mt-2"></span>
-                                    На вказані ціни дія дисконтних карток та додаткові знижки не розповсюджуються.
-                                </li>
-                            </ul>
+            <div class="price-card max-w-4xl mx-auto">
+                <div class="bg-surface-cream rounded-3xl shadow-soft overflow-hidden border border-primary/20">
+                    <div class="bg-gradient-to-r from-primary/10 to-transparent p-6 sm:p-8">
+                        <div class="flex items-start gap-4 sm:gap-5">
+                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center shadow-inner">
+                                <span class="text-2xl">💡</span>
+                            </div>
+                            <div>
+                                <h3 class="font-display font-bold text-earth-cedar text-xl sm:text-2xl mb-4">Важлива інформація:</h3>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-3 text-base text-surface-charcoal/80 leading-relaxed font-medium">
+                                        <span class="flex-shrink-0 w-2 h-2 rounded-full bg-primary mt-2"></span>
+                                        Ціни дійсні за умови замовлення щонайменше однієї процедури на кожного гостя.
+                                    </li>
+                                    <li class="flex items-start gap-3 text-base text-surface-charcoal/80 leading-relaxed font-medium">
+                                        <span class="flex-shrink-0 w-2 h-2 rounded-full bg-primary mt-2"></span>
+                                        На вказані ціни дія дисконтних карток та додаткові знижки не розповсюджуються.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Заборона -->
-            <div class="text-center pt-6 pb-2">
-                <p class="font-display font-bold text-earth-terracotta text-base sm:text-lg tracking-wide">
-                    🚫 Приносити свої напої та продукти ЗАБОРОНЕНО
-                </p>
+            <div class="flex justify-center pt-8 pb-4 px-4 w-full">
+                <div class="w-fit bg-surface-cream rounded-2xl border-2 border-earth-terracotta/30 py-5 px-6 sm:px-8 shadow-glow relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-earth-terracotta"></div>
+                    <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 ml-2">
+                        <div class="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-earth-terracotta/10 flex items-center justify-center">
+                            <span class="text-2xl sm:text-3xl">🚫</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <p class="font-display font-bold text-earth-terracotta text-lg sm:text-xl tracking-wide leading-snug text-center">
+                                Приносити свої напої та продукти
+                            </p>
+                            <p class="font-display font-extrabold text-earth-terracotta text-xl sm:text-2xl tracking-widest uppercase mt-1 text-center">
+                                ЗАБОРОНЕНО
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- CTA button -->

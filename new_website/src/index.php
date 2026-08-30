@@ -81,9 +81,12 @@ $rentalSection = $priceData['sections'][0];
             filter: blur(2px);
         }
 
-        .heading-shadow {
-            text-shadow: 2px 2px 0px rgba(253, 251, 247, 0.8),
-                4px 4px 6px rgba(94, 58, 47, 0.1);
+        /* Generic reusable classes for text shadows over photo backgrounds */
+        .shadow-text-strong {
+            text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8), 0px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+        .shadow-text-light {
+            text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
         }
 
         .hero-pattern {
@@ -94,8 +97,8 @@ $rentalSection = $priceData['sections'][0];
     </style>
 </head>
 
-<!-- <body class="antialiased" style="--bg-photo: url('images/new_gallery/optimized/17.jpg');"> -->
-<body class="antialiased">
+<body class="antialiased" style="--bg-photo: url('images/new_gallery/optimized/17.jpg');">
+<!-- <body class="antialiased"> -->
 
     <!-- Стійка навігація (Sticky Navigation) -->
     <nav
@@ -170,11 +173,11 @@ $rentalSection = $priceData['sections'][0];
                 </div>
 
                 <h1
-                    class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold text-earth-cedar leading-tight mb-8 heading-shadow">
-                    Відпочинок, що зцілює <br /> <span class="text-primaryDark">душу та тіло</span>
+                    class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold text-surface-cream leading-tight mb-8 shadow-text-strong">
+                    Відпочинок, що зцілює <br /> <span class="text-primary">душу та тіло</span>
                 </h1>
 
-                <p class="text-lg md:text-xl text-surface-charcoal/80 mb-10 font-medium leading-relaxed">
+                <p class="text-lg md:text-xl text-surface-cream/90 mb-10 font-medium leading-relaxed shadow-text-light">
                     Пориньте в атмосферу затишку нашої традиційної української лазні.
                     Цілющий пар, запашні віники та домашнє частування чекають на вас.
                 </p>
@@ -185,13 +188,13 @@ $rentalSection = $priceData['sections'][0];
                         Забронювати Лазню
                     </a>
                     <a href="prices.php"
-                        class="w-full sm:w-auto bg-surface-cream hover:bg-primary/20 text-earth-cedar border-2 border-primary/50 text-lg font-bold py-4 px-8 rounded-full transition-all duration-300">
+                        class="w-full sm:w-auto bg-surface-cream hover:bg-primary/20 text-earth-cedar hover:text-white border-2 border-primary/50 text-lg font-bold py-4 px-8 rounded-full transition-all duration-300">
                         Дивитись Ціни
                     </a>
                 </div>
             </div>
 
-            <!-- Ілюстрація / Зображення Героя -->
+            <!-- Ілюстрація / Зображення Героя
             <div class="mt-16 md:mt-24 relative max-w-5xl mx-auto">
                 <div
                     class="aspect-w-16 aspect-h-9 md:aspect-h-7 rounded-3xl overflow-hidden shadow-2xl border-4 border-surface-cream relative group min-h-[300px]">
@@ -218,14 +221,16 @@ $rentalSection = $priceData['sections'][0];
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <!-- Демонстрація виведення даних (Прайс-лист прев'ю) -->
-    <section id="prices" class="py-20 bg-transparent relative z-20">
+    <section id="prices" class="pt-8 pb-20 bg-transparent relative z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="font-display text-4xl font-bold text-center text-earth-cedar mb-12">Популярні послуги</h2>
+            <h1 class="font-display text-5xl font-bold text-center text-surface-cream mb-12 shadow-text-strong">
+                Популярні послуги
+            </h1>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <?php foreach (array_slice($rentalSection['items'], 0, 3) as $package): ?>
@@ -254,7 +259,8 @@ $rentalSection = $priceData['sections'][0];
 
             <div class="mt-12 text-center">
                 <a href="prices.php"
-                    class="inline-block text-earth-terracotta hover:text-earth-cedar font-semibold underline underline-offset-4 decoration-2 transition-colors">Переглянути
+                    class="inline-block text-surface-cream hover:text-primary text-xl md:text-2xl font-bold underline underline-offset-4 decoration-2 transition-colors shadow-text-light">
+                    Переглянути
                     повний прайс-лист &rarr;</a>
             </div>
         </div>
